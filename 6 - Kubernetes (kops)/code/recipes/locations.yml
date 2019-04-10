@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: locations
-        image: <your locations image URL goes here>
+        image: 941681414890.dkr.ecr.us-east-1.amazonaws.com/locations:v1
         ports:
         - containerPort: 8081
 ---

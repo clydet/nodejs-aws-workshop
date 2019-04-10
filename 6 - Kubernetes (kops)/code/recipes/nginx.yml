@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: nginx-router
-        image: <your nginx-router image URL goes here>
+        image: 941681414890.dkr.ecr.us-east-1.amazonaws.com/nginx-router:v2
         ports:
         - containerPort: 80
 ---
