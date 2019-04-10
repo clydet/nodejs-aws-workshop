@@ -1,0 +1,44 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "iam:CreateInstanceProfile",
+                "iam:GetRole",
+                "s3:PutAccountPublicAccessBlock",
+                "elasticloadbalancing:CreateLoadBalancer",
+                "iam:GetInstanceProfile",
+                "elasticloadbalancing:DescribeTags",
+                "elasticloadbalancing:ConfigureHealthCheck",
+                "iam:CreateRole",
+                "elasticloadbalancing:*",
+                "iam:PutRolePolicy",
+                "autoscaling:*",
+                "iam:AddRoleToInstanceProfile",
+                "elasticloadbalancing:CreateLoadBalancerListeners",
+                "elasticloadbalancing:DescribeLoadBalancers",
+                "iam:PassRole",
+                "s3:GetAccountPublicAccessBlock",
+                "s3:ListAllMyBuckets",
+                "ec2:*",
+                "s3:HeadBucket",
+                "iam:GetRolePolicy",
+                "elasticloadbalancing:RegisterInstancesWithLoadBalancer",
+                "elasticloadbalancing:ModifyLoadBalancerAttributes",
+                "ecr:*"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Allow",
+            "Action": "s3:*",
+            "Resource": [
+                "arn:aws:s3:::ty1f-nodejs-k8s-store",
+                "arn:aws:s3:::ty1f-nodejs-k8s-store/*"
+            ]
+        }
+    ]
+}
